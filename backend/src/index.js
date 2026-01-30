@@ -271,6 +271,12 @@ app.get('/market', async (_req, res) => {
 });
 
 const port = Number(process.env.PORT || 4000);
-app.listen(port, () => {
-  console.log(`[backend] listening on http://localhost:${port}`);
-});
+
+// Only listen if run directly (not requested by Vercel)
+if (process.env.NODE_ENV !== 'production' || !process.env.VERCEL) {
+  app.listen(port, () => {
+    console.log(`[backend] listening on http://localhost:${port}`);
+  });
+}
+
+export default app;
