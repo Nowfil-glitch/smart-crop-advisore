@@ -1,0 +1,225 @@
+Role:
+Act as a senior frontend engineer and creative UI architect with deep expertise in React, modern UX systems, glassmorphism, 3D web experiences, and performance-optimized animations.
+
+Objective:
+Build a production-ready frontend for an AI Smart Crop Advisor web application that delivers personalized agricultural insights using a premium, futuristic, glassmorphic design with interactive 3D elements, smooth transitions, hover effects, and parallax motion.
+
+The UI must feel intelligent, calm, and high-end, while remaining simple and accessible for farmers.
+
+🌾 Core Functional Features
+🌱 Personalized Crop Recommendations
+
+Dynamic crop recommendation cards based on:
+
+Season
+
+Soil type
+
+Location
+
+Rainfall
+
+Budget
+
+Each card shows:
+
+Crop name & image / 3D model
+
+AI confidence score
+
+Yield & risk indicators
+
+Expandable AI explainability panel (“Why this crop?”)
+
+🌦 Weather Forecast & Smart Alerts
+
+Hyper-local weather dashboard:
+
+Daily & weekly forecast
+
+Rainfall probability
+
+Temperature trends
+
+Weather-triggered alerts:
+
+Best sowing time
+
+Irrigation timing
+
+Pest risk warnings
+
+Glass cards with animated weather icons
+
+📊 Soil Health & Fertilizer Guidance
+
+Soil data input UI:
+
+NPK values
+
+pH level
+
+Visual nutrient indicators:
+
+Progress bars
+
+Color-coded health status
+
+Fertilizer recommendations with cost awareness
+
+🐞 AI Pest & Disease Detection
+
+Image upload interface (drag & drop)
+
+Preview image in glass container
+
+Animated diagnosis state
+
+Result card showing:
+
+Detected issue
+
+Severity
+
+Treatment suggestions
+
+💰 Market Insights
+
+Crop price cards:
+
+Current price
+
+Trend arrows
+
+Mini charts
+
+Profit estimation UI
+
+Best time-to-sell indicator
+
+🗣 Multilingual & Voice-Ready UI
+
+Language switcher in navbar
+
+Voice input button UI
+
+Accessible icon-first layout
+
+🎨 UI / UX Design System
+🧊 Glassmorphic Style
+
+Frosted glass cards:
+
+backdrop-filter: blur(24–40px)
+
+Soft gradients (green → teal → blue)
+
+Rounded corners (16–20px)
+
+Subtle grain texture
+
+Light & dark modes (dark with neon accents)
+
+🧭 Navbar
+
+Floating, sticky glass navbar
+
+Animated scroll shrink
+
+Gradient CTA button
+
+Logo with subtle 3D hover tilt
+
+🧱 Cards & Panels
+
+Reusable glass card components
+
+Hover lift + glow
+
+Expandable modals/drawers for details
+
+🎥 3D & Parallax Effects
+
+Use Spline or React Three Fiber for:
+
+Hero section background
+
+Agricultural storytelling elements
+
+Parallax layers:
+
+Background → midground → UI
+
+Cursor-based 3D camera movement
+
+Lazy-load and disable heavy effects on low-end devices
+
+✨ Animations & Motion Specs
+
+Page transitions: fade + slide
+
+Scroll-based reveal animations
+
+Hover:
+
+Scale (1 → 1.03)
+
+Glow sweep
+
+Modals:
+
+Scale + opacity animation
+
+Use Framer Motion / GSAP
+
+Timing:
+
+Micro-interactions: 150–250ms
+
+UI transitions: 300–500ms
+
+Easing:
+
+cubic-bezier(0.22, 1, 0.36, 1)
+
+📱 Responsiveness & Performance
+
+Mobile-first layout
+
+Touch-friendly components
+
+Optimize animations & 3D assets
+
+Graceful fallback for slow networks
+
+🛠️ Tech Stack Expectations
+
+Framework: React + Vite / Next.js
+
+Styling: Tailwind CSS
+
+Animations: Framer Motion / GSAP
+
+3D: Spline / React Three Fiber
+
+Icons: Lucide / Phosphor
+
+Charts: Recharts / Chart.js
+
+📦 Deliverables Expected
+
+Full component-based frontend structure
+
+Reusable UI components (cards, modals, navbar)
+
+Motion & animation logic
+
+3D integration points
+
+Light & dark theme setup
+
+Clean, scalable folder structure
+
+🧠 Design Philosophy
+
+“A futuristic agritech interface where nature meets intelligence, blending glass, depth, motion, and data clarity.”

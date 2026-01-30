@@ -1,0 +1,23 @@
+{
+  "name": "smart-crop-advisor",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev": "npm --prefix backend run dev & npm --prefix frontend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "dev:backend": "npm --prefix backend run dev",
+    "build": "npm --prefix frontend run build",
+    "start": "npm --prefix backend run start & npm --prefix frontend run start",
+    "start:frontend": "npm --prefix frontend run start",
+    "start:backend": "npm --prefix backend run start",
+    "lint": "npm --prefix frontend run lint",
+    "install:frontend": "npm --prefix frontend install",
+    "install:backend": "npm --prefix backend install"
+  },
+  "devDependencies": {
+    "playwright": "^1.58.0"
+  }
+}

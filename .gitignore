@@ -1,0 +1,12 @@
+node_modules
+.next
+out
+dist
+.env*
+.DS_Store
+
+# nested frontend folder (after reorg)
+frontend/node_modules
+frontend/.next
+frontend/out
+frontend/dist

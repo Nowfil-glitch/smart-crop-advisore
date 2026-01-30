@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+html[data-contrast='high'] .glass {
+  border-color: rgba(255, 255, 255, 0.22);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+html[data-reducedMotion='true'] * {
+  scroll-behavior: auto !important;
+}
+
+/* Subtle grain overlay utility */
+.grain::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22160%22 height=%22160%22%3E%3Cfilter id=%22n%22 x=%220%22 y=%220%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.8%22 numOctaves=%222%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22160%22 height=%22160%22 filter=%22url(%23n)%22 opacity=%220.055%22/%3E%3C/svg%3E');
+  mix-blend-mode: overlay;
+}
+
+@layer components {
+  .glass {
+    @apply relative overflow-hidden rounded-glass border border-white/10 bg-white/[0.04] shadow-glass backdrop-blur-glass;
+  }
+
+  .glass::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(circle at 18% 0%, rgba(34, 211, 238, 0.14), transparent 52%),
+      radial-gradient(circle at 82% 24%, rgba(139, 92, 246, 0.14), transparent 54%);
+    opacity: 0.95;
+  }
+
+  .glass > * {
+    position: relative;
+    z-index: 1;
+  }
+}

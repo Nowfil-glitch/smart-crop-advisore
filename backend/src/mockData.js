@@ -1,0 +1,100 @@
+export const cropRecs = [
+  {
+    id: 'rice',
+    name: 'Rice',
+    confidence: 0.82,
+    yieldLabel: 'High',
+    roiLabel: 'Medium',
+    waterLabel: 'High',
+    riskLabel: 'Medium',
+    tags: ['Best Match', 'Stable'],
+    why: [
+      { label: 'Season fit', value: 0.86 },
+      { label: 'Rainfall', value: 0.74 },
+      { label: 'Soil', value: 0.58 },
+      { label: 'Budget', value: 0.52 },
+    ],
+    actions: ['Prepare nursery bed', 'Transplant after first steady rains', 'Split nitrogen application'],
+  },
+  {
+    id: 'maize',
+    name: 'Maize',
+    confidence: 0.77,
+    yieldLabel: 'Medium',
+    roiLabel: 'High',
+    waterLabel: 'Medium',
+    riskLabel: 'Low',
+    tags: ['High ROI', 'Low Risk'],
+    why: [
+      { label: 'Soil', value: 0.73 },
+      { label: 'Budget', value: 0.71 },
+      { label: 'Season fit', value: 0.66 },
+      { label: 'Rainfall', value: 0.55 },
+    ],
+    actions: ['Use seed treatment', 'Maintain 20–25 cm plant spacing', 'Scout for fall armyworm weekly'],
+  },
+  {
+    id: 'groundnut',
+    name: 'Groundnut',
+    confidence: 0.7,
+    yieldLabel: 'Medium',
+    roiLabel: 'Medium',
+    waterLabel: 'Low',
+    riskLabel: 'Medium',
+    tags: ['Low Water'],
+    why: [
+      { label: 'Water need', value: 0.82 },
+      { label: 'Soil', value: 0.63 },
+      { label: 'Market trend', value: 0.52 },
+      { label: 'Season fit', value: 0.51 },
+    ],
+    actions: ['Apply gypsum at flowering', 'Avoid waterlogging', 'Harvest at 70% maturity'],
+  },
+];
+
+export const alerts = [
+  {
+    id: 'a1',
+    type: 'Heatwave',
+    severity: 'Medium',
+    message: 'High daytime temperatures expected for 3 days.',
+    suggestions: ['Irrigate early morning', 'Mulch to reduce evaporation', 'Avoid fertilizer during peak heat'],
+  },
+  {
+    id: 'a2',
+    type: 'Heavy Rain',
+    severity: 'Low',
+    message: 'Light-to-moderate rain likely this week.',
+    suggestions: ['Ensure drainage channels', 'Delay pesticide spray by 24h after rain'],
+  },
+];
+
+export const market = [
+  {
+    id: 'm1',
+    crop: 'Rice',
+    unit: '₹/quintal',
+    current: 2250,
+    changePct: 1.8,
+    series: [2100, 2120, 2150, 2170, 2200, 2230, 2250],
+    bestTimeToSell: 'Now',
+  },
+  {
+    id: 'm2',
+    crop: 'Maize',
+    unit: '₹/quintal',
+    current: 1950,
+    changePct: -0.9,
+    series: [2000, 2020, 2010, 1980, 1970, 1960, 1950],
+    bestTimeToSell: 'Wait 1-2 weeks',
+  },
+  {
+    id: 'm3',
+    crop: 'Groundnut',
+    unit: '₹/quintal',
+    current: 5650,
+    changePct: 2.2,
+    series: [5200, 5300, 5400, 5480, 5520, 5580, 5650],
+    bestTimeToSell: 'Hold',
+  },
+];
