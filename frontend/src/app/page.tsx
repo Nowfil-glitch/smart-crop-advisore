@@ -47,13 +47,6 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="glass grain relative h-[320px] overflow-hidden p-0 md:h-[380px] lg:h-[420px]">
-              <div className="absolute inset-0">
-                <div className="absolute inset-0 bg-[conic-gradient(from_180deg_at_50%_50%,rgba(34,211,238,0.35),rgba(139,92,246,0.28),rgba(34,211,238,0.25),rgba(255,255,255,0.05),rgba(34,211,238,0.35))]" />
-                <div className="absolute inset-0 opacity-70 [mask-image:radial-gradient(circle_at_center,black,transparent_65%)] bg-[radial-gradient(circle_at_30%_30%,rgba(255,255,255,0.10),transparent_35%),radial-gradient(circle_at_70%_60%,rgba(255,255,255,0.08),transparent_40%)]" />
-              </div>
-              <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/0 via-black/10 to-black/35" />
-            </div>
           </div>
 
           <div className="grid gap-4 md:grid-cols-3">
