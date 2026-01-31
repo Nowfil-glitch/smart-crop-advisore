@@ -13,7 +13,7 @@ interface ScrollRevealProps {
     threshold?: number;
 }
 
-const directionVariants: Record<string, { hidden: object; visible: object }> = {
+const directionVariants: Record<string, Variants> = {
     up: {
         hidden: { opacity: 0, y: 40 },
         visible: { opacity: 1, y: 0 },
